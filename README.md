@@ -6,6 +6,3 @@
   - `postpresql-client`
     - enables you to communicate with your Postgres database in the terminal by `psql` commands
     - ![psql](/screenshots/psql.jpg)
-  - `live-server`
-    - opens up a browser on which it displays your contents
-    - hot-reloads changes you make and save on the browser
