@@ -1,0 +1,8 @@
+# dependency packages
+node_modules/
+
+# env file
+.env
+
+# compiled ts files as js ones
+dist/
