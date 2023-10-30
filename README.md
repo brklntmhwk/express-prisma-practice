@@ -1,5 +1,5 @@
 # Express Prisma Practice
-- This repo is an example project for my practice that integrates Express, a popular Node.js web app framework, and [Prisma](https://www.prisma.io/), an easy-to-use ORM for Node.js & TypeScript
+- This repo is an example project for my practice that consists of Express, a popular Node.js web app framework, and [Prisma](https://www.prisma.io/), an easy-to-use ORM for Node.js & TypeScript
 - The infrastructure is set up by Dev Containers with docker and docker-compose files
   - The settings are based on [my dev container template for Express & Postgres](https://github.com/brklntmhwk/dev-container-express-postgres)
 - DB is [PostgreSQL](https://www.postgresql.org/)
