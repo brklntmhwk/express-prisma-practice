@@ -7,7 +7,7 @@ const router = express.Router();
 /* GET todo page. */
 router.get("/", async (req, res) => {
   const todos = await prisma.todo.findMany();
-  res.json(todos);
+  res.render("todos", { todos });
 });
 
 export default router;

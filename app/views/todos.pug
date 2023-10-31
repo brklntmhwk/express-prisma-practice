@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div.container
+    h3.text-4xl Todos
+    div
+      ul
+      each todo in todos
+        li.list-none
+          h4 #{todo.title}
+          span #{todo.description}

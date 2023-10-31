@@ -14,6 +14,8 @@ In collaboration with `nodemon` and `ts-node`, you can achieve hot reload.
 - 2. Create `nodemon.json` and add some configurations
   - See `nodemon.json` for reference
 - 3. Add `"start:dev": "nodemon"` to scripts in `package.json`
+Now you can start your app with hot reload functionality by `npm run start:dev`
+---
 ### Prisma
 #### Startup
 These steps are based on [Prisma Docs Quickstart](https://www.prisma.io/docs/getting-started/quickstart).
@@ -43,8 +45,13 @@ These steps are based on [Prisma Docs Quickstart](https://www.prisma.io/docs/get
   - ![prisma data seeding succeeded](screenshots/prisma-data-seed.jpg)
 
 ## Reference
-- [Prisma Docs Quickstart](https://www.prisma.io/docs/getting-started/quickstart)
-- [Seeding your database](https://www.prisma.io/docs/guides/migrate/seed-database)
+### Overall
 - [How can I include pug templates in compiled typescript?](https://stackoverflow.com/questions/71751998/how-can-i-include-pug-templates-in-compiled-typescript)
 - [TypeScriptのExpressアプリケーションを作る](https://qiita.com/jumperson/items/e546137f6305ea98a673)
 - [Express(Node.js)でTypeScript環境を構築するための完全ガイド](https://reffect.co.jp/node-js/express-typescript/)
+### Prisma
+- [Prisma Docs Quickstart](https://www.prisma.io/docs/getting-started/quickstart)
+- [Seeding your database](https://www.prisma.io/docs/guides/migrate/seed-database)
+### Styles
+- [tailwindlabs/tailwindcss-intellisense](https://github.com/tailwindlabs/tailwindcss-intellisense)
+- [How to Fix Tailwind CSS IntelliSense in Visual Studio Code](https://javascript.plainenglish.io/how-to-fix-tailwind-css-intellisense-in-visual-studio-code-3dede794df21)

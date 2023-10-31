@@ -17,8 +17,10 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"esbenp.prettier-vscode",
+				"amandeepmittal.pug",
+				"bradlc.vscode-tailwindcss",
 				"dbaeumer.vscode-eslint",
+				"esbenp.prettier-vscode",
 				"Prisma.prisma"
 			]
 		}
