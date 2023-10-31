@@ -2,6 +2,8 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='./styles/tailwind.css')
+    link(rel='stylesheet', href='/styles/output.css')
   body
-    block content
+    include ./nav.pug
+    main.container.mx-auto.px-4.py-2
+      block content

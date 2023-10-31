@@ -1,11 +1,10 @@
 extends layout
 
 block content
-  div.container
-    h3.text-4xl Todos
-    div
-      ul
-      each todo in todos
-        li.list-none
-          h4 #{todo.title}
-          span #{todo.description}
+  h2.text-4xl Todos
+  div.grid.gap-5
+    each todo in todos
+      div.todo-list
+        h3.todo-title #{todo.title}
+        p.todo-description #{todo.description}
+        p #{todo.dueDate}

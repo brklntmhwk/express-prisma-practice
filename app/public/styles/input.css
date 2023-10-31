@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-3xl 2xl:text-4xl font-extrabold text-zinc-700 dark:text-zinc-400 leading-normal;
+  }
+  h2 {
+    @apply text-2xl 2xl:text-3xl font-extrabold text-zinc-700 dark:text-zinc-400 leading-normal;
+  }
+  h3 {
+    @apply text-lg xl:text-xl 2xl:text-2xl font-bold text-zinc-700 dark:text-zinc-400 leading-snug;
+  }
+  h4 {
+    @apply text-base xl:text-lg 2xl:text-xl font-bold text-zinc-700 dark:text-zinc-400 leading-snug;
+  }
+  h5 {
+    @apply text-base lg:text-base 2xl:text-lg font-semibold text-zinc-700 dark:text-zinc-400 leading-tight;
+  }
+  h6 {
+    @apply text-base lg:text-base 2xl:text-lg font-medium text-zinc-700 dark:text-zinc-400 leading-tight;
+  }
+}
+
+@layer components {
+  .nav-header {
+    @apply flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-5 dark:bg-gray-800;
+  }
+  .nav-header > nav {
+    @apply max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between;
+  }
+  .nav-header > nav > a {
+    @apply flex-none text-xl font-semibold dark:text-white;
+  }
+  .nav-menu {
+    @apply flex flex-row items-center gap-5 mt-5 sm:justify-end sm:mt-0 sm:pl-5;
+  }
+  .nav-menu > a {
+    @apply font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500;
+  }
+  .todo-list {
+    @apply flex flex-col bg-white border shadow-sm rounded-xl p-4 md:p-5 dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7];
+  }
+  .todo_title {
+    @apply text-lg font-bold text-gray-800 dark:text-white;
+  }
+  .todo_description {
+    @apply mt-2 text-gray-800 dark:text-gray-400;
+  }
+}

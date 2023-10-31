@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-const config = {
+module.exports = {
   mode: "jit",
-  content: ["./**/*.pug"],
+  content: ["./views/**/*.pug"],
   theme: {
     extend: {
       animation: {
@@ -16,5 +16,3 @@ const config = {
   },
   plugins: [],
 };
-
-export default config;
