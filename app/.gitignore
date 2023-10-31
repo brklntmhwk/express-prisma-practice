@@ -4,5 +4,8 @@ node_modules/
 # env file
 .env
 
-# compiled ts files as js ones
+# compiled ts file into js
 dist/
+
+# auto-generated css file
+public/styles/output.css
