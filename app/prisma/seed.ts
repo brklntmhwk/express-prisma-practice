@@ -11,7 +11,10 @@ const todoData = [
 ];
 
 async function main() {
-  await prisma.todo.createMany({ data: todoData, skipDuplicates: true });
+  await prisma.$transaction([
+    prisma.todo.deleteMany(),
+    prisma.todo.createMany({ data: todoData }),
+  ]);
 }
 
 main()

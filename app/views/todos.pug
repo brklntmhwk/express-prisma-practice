@@ -1,10 +1,24 @@
 extends layout
 
 block content
-  h2.text-4xl Todos
-  div.grid.gap-5
+  h2 Todos
+  hr
+  div.grid.gap-5.py-8
     each todo in todos
       div.todo-list
-        h3.todo-title #{todo.title}
+        div.flex.gap-5.flex-nowrap.items-center
+          h3.todo-title: a(href=`/todos/${todo.id}`) #{todo.title}
+          if !todo.done
+            include ../public/styles/inline/check-circle.svg
         p.todo-description #{todo.description}
-        p #{todo.dueDate}
+        div.flex.flex-wrap.gap-3
+          div.flex.gap-2
+            include ../public/styles/inline/calendar.svg
+            span #{todo.dueDate}
+          div.flex.gap-2
+            include ../public/styles/inline/arrow-down-on-square.svg
+            span #{todo.createdAt}
+          div.flex.gap-2
+            include ../public/styles/inline/arrow-path.svg
+            span #{todo.updatedAt}
+        //- input#(type="checkbox", name="done")
