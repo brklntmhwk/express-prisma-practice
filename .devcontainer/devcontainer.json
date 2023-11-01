@@ -1,5 +1,5 @@
 {
-	"name": "nodejs-postgres-dev-container",
+	"name": "express-prisma-practice",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",

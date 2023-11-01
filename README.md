@@ -8,13 +8,14 @@
 ## Tips
 ### Express
 #### Hot reload
-In collaboration with `nodemon` and `ts-node`, you can achieve hot reload.
+In a dev container, it doesn't work properly somehow. Probing the cause around a bit, it seems to be related to
+~~In collaboration with `nodemon` and `ts-node`, you can achieve hot reload.~~
 - 1. Install nodemon and ts-node as dev dependencies
   - Execute `npm install --save-dev ts-node nodemon`
 - 2. Create `nodemon.json` and add some configurations
   - See `nodemon.json` for reference
-- 3. Add `"start:dev": "nodemon"` to scripts in `package.json`
-Now you can start your app with hot reload functionality by `npm run start:dev`
+- 3. Add `"dev": "nodemon"` to scripts in `package.json`
+Now you can start your app with hot reload functionality by `npm run dev`
 ---
 ### Prisma
 #### Startup

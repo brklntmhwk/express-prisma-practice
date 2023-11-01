@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "npm run build && node ./dist/bin/www.js",
-    "start:dev": "nodemon",
+    "dev": "nodemon -L",
     "build": "tsc"
   },
   "prisma": {
@@ -32,6 +32,7 @@
     "prisma": "^5.5.2",
     "tailwindcss": "^3.3.5",
     "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.2.2"
   }
 }
