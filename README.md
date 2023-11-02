@@ -29,6 +29,7 @@ These steps are based on [Prisma Docs Quickstart](https://www.prisma.io/docs/get
 - 4. Execute `npx prisma migrate dev --name init`
   - It runs a migration for you to create your DB tables you defined
   - It generates `prisma/migrations/{yyyymmddhhmmss_init/migration.sql, migration_lock.toml}`
+  - **It also executes a seed file if you've already set it up following the below steps**
   - Hereafter you can use a Prisma DB client
   - In dev, `npx prisma db push` is helpful when you want to reflect changes in the schema but not to generate migration folders every time.
 #### Seeding data
@@ -56,3 +57,5 @@ These steps are based on [Prisma Docs Quickstart](https://www.prisma.io/docs/get
 ### Styles
 - [tailwindlabs/tailwindcss-intellisense](https://github.com/tailwindlabs/tailwindcss-intellisense)
 - [How to Fix Tailwind CSS IntelliSense in Visual Studio Code](https://javascript.plainenglish.io/how-to-fix-tailwind-css-intellisense-in-visual-studio-code-3dede794df21)
+### Express
+- [trying to format a date on jade template](https://stackoverflow.com/questions/16922625/trying-to-format-a-date-on-jade-template)

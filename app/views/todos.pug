@@ -14,11 +14,11 @@ block content
         div.flex.flex-wrap.gap-3
           div.flex.gap-2
             include ../public/styles/inline/calendar.svg
-            span #{todo.dueDate}
+            span #{dateFns.formatRelative(todo.dueDate, new Date())}
           div.flex.gap-2
             include ../public/styles/inline/arrow-down-on-square.svg
-            span #{todo.createdAt}
+            span #{todo.createdAt.toDateString()}
           div.flex.gap-2
             include ../public/styles/inline/arrow-path.svg
-            span #{todo.updatedAt}
+            span #{todo.updatedAt.toDateString()}
         //- input#(type="checkbox", name="done")

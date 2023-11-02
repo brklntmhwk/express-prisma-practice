@@ -15,6 +15,9 @@ const app = express();
 app.set("views", path.join(__dirname, "/../views"));
 app.set("view engine", "pug");
 
+app.locals.dateFns = require("date-fns");
+app.locals.enUS = require("date-fns/locale/en-US");
+
 app.use(logger("dev"));
 app.use(express.json());
 // allow it to receive form data

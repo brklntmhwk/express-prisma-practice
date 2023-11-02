@@ -1,5 +1,6 @@
 import * as express from "express";
-import { PrismaClient } from "@prisma/client";
+import { Prisma, PrismaClient } from "@prisma/client";
+import { format } from "date-fns";
 
 const prisma = new PrismaClient();
 const router = express.Router();
@@ -11,9 +12,15 @@ router.get("/", async (_req, res) => {
 });
 router.get("/:id", async (req, res) => {
   const todoId = Number(req.params.id);
-  const todo = await prisma.todo.findUnique({ where: { id: todoId } });
 
-  res.render("todo", { todo });
+  try {
+    const todo = await prisma.todo.findUnique({ where: { id: todoId } });
+    res.render("todo", { todo });
+  } catch (e) {
+    if (e instanceof Prisma.PrismaClientKnownRequestError) {
+    }
+    throw e;
+  }
 });
 
 export default router;
