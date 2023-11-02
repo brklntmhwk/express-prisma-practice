@@ -7,18 +7,20 @@ block content
     each todo in todos
       div.todo-list
         div.flex.gap-5.flex-nowrap.items-center
-          h3.todo-title: a(href=`/todos/${todo.id}`) #{todo.title}
+          h3.todo-title: a(href=`/todos/${todo.id}` class=`${dateFns.differenceInDays(new Date(), todo.dueDate) > 0 ? "text-red-400" : ""}`) #{todo.title}
           if !todo.done
             include ../../public/styles/inline/check-circle.svg
         p.todo-description #{todo.description}
-        div.flex.flex-wrap.gap-3
-          div.flex.gap-2
-            include ../../public/styles/inline/calendar.svg
-            span #{dateFns.formatRelative(todo.dueDate, new Date())}
-          div.flex.gap-2
-            include ../../public/styles/inline/arrow-down-on-square.svg
-            span #{todo.createdAt.toDateString()}
-          div.flex.gap-2
-            include ../../public/styles/inline/arrow-path.svg
-            span #{todo.updatedAt.toDateString()}
+        div.flex.justify-between
+          section.flex.flex-wrap.gap-3
+            div.flex.gap-2
+              include ../../public/styles/inline/calendar.svg
+              span #{dateFns.formatRelative(todo.dueDate, new Date())}
+            div.flex.gap-2
+              include ../../public/styles/inline/arrow-down-on-square.svg
+              span #{todo.createdAt.toDateString()}
+            div.flex.gap-2
+              include ../../public/styles/inline/arrow-path.svg
+              span #{todo.updatedAt.toDateString()}
+          include ../../public/styles/inline/trash.svg
         //- input#(type="checkbox", name="done")
