@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  article(class="prose xl:prose-xl")
+    h2 #{todo.title}
+    div.flex.flex-wrap.gap-3.items-center
+      div.flex.gap-2
+        include ../../public/styles/inline/calendar.svg
+        span #{dateFns.formatRelative(todo.dueDate, new Date())}
+      div.flex.gap-2
+        include ../../public/styles/inline/arrow-down-on-square.svg
+        span #{todo.createdAt.toDateString()}
+      div.flex.gap-2
+        include ../../public/styles/inline/arrow-path.svg
+        span #{todo.updatedAt.toDateString()}
+    p #{todo.description}
+    section
+      a(href="/todos") ◀ Back to todos page

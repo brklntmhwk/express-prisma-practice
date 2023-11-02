@@ -59,3 +59,5 @@ These steps are based on [Prisma Docs Quickstart](https://www.prisma.io/docs/get
 - [How to Fix Tailwind CSS IntelliSense in Visual Studio Code](https://javascript.plainenglish.io/how-to-fix-tailwind-css-intellisense-in-visual-studio-code-3dede794df21)
 ### Express
 - [trying to format a date on jade template](https://stackoverflow.com/questions/16922625/trying-to-format-a-date-on-jade-template)
+### Pug
+- [pugの書き方、使い方（変数＆配列編）](https://qiita.com/sszzszsz/items/c206b3536818bb9db7be)

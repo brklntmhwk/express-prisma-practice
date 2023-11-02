@@ -1,6 +1,6 @@
 {
   "restartable": "rs",
-  "watch": ["src", "views"],
+  "watch": ["src"],
   "ext": "js,ts,pug",
   "exec": "ts-node ./src/bin/www.ts"
 }
